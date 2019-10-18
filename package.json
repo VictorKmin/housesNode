@@ -9,9 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
     "mysql2": "^1.6.5",
     "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/sequelize": "^4.28.6",
+    "@types/bcrypt": "^3.0.0"
   }
 }
