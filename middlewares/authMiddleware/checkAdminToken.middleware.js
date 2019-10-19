@@ -9,7 +9,7 @@ module.exports = async (req, res, next) => {
         return next(new ErrorHandler('No token', 403, 'CheckAccessToken'))
     }
 
-    tokenVerificator(token, JWT_METHOD.USER);
+    tokenVerificator(token, JWT_METHOD.ADMIN);
 
     next()
 }

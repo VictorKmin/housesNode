@@ -6,4 +6,6 @@ module.exports = {
     USER: 'User',
     USER_STATUS: 'UserStatus',
     CITY: 'City',
+    HOUSE_DOC: 'HouseDoc',
+    HOUSE_PHOTO: 'HousePhoto',
 }

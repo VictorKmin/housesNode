@@ -1,2 +1,2 @@
-module.exports.getUserFromAccessToken = require('./getUserFromAccessToken');
-module.exports.deleteTokenPairByAccessToken = require('./deleteTokenPairByAccessToken');
+module.exports.getUserFromTokenByParams = require('./getUserFromTokenByParams');
+module.exports.deleteTokenPairByParams = require('./deleteTokenPairByParams');

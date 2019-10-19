@@ -1,9 +1,10 @@
 const db = require('../../dataBase').getInstance();
 const {DB_TABLES} = require('../../constant');
 
-module.exports = async userObject => {
+module.exports = (paramsObject, findObject) => {
     const UserModel = db.getModel(DB_TABLES.USER);
-    const user = await UserModel.create(userObject);
 
-    return user && user.dataValues;
+    UserModel.update(paramsObject, {
+        where: findObject
+    })
 }

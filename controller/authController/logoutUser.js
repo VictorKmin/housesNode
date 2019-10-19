@@ -1,10 +1,10 @@
-const {authService} = require('../../service')
+const {authService} = require('../../service');
 
 module.exports = async (req, res) => {
     try {
         const token = req.get('Authorization');
 
-        await authService.deleteTokenPairByAccessToken(token);
+        await authService.deleteTokenPairByParams({access_token: token});
 
         res.end();
     } catch (e) {

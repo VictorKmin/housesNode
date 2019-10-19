@@ -21,9 +21,17 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        photo_path: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
         status_id: {
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+        created_at: {
+            type: DataTypes.DATE,
+            defaultValue: sequelize.fn('now')
         }
     }, {
         tableName: 'user',

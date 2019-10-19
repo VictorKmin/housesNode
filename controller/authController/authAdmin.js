@@ -1,7 +1,7 @@
 const {userService, oauthService} = require('../../service');
 const ErrorHandler = require('../../error/ErrorHandler');
 const {tokenizer, checkPasswordHash} = require('../../helpers');
-const {USER_ROLES, USER_STATUS} = require('../../constant');
+const {USER_ROLES, USER_STATUS, JWT_METHOD} = require('../../constant');
 
 module.exports = async (req, res) => {
     try {
@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
 
         await checkPasswordHash(isUserPresent.password, password);
 
-        const tokens = tokenizer('admin');
+        const tokens = tokenizer(JWT_METHOD.ADMIN);
 
         oauthService.insertTokenPair({
             user_id: isUserPresent.id,
