@@ -15,7 +15,7 @@
     "fs-extra": "^8.1.0",
     "jsonwebtoken": "^8.4.0",
     "mysql2": "^1.6.5",
-    "sequelize": "^4.42.0",
+    "sequelize": "^5.15.1",
     "uuid": "latest"
   },
   "devDependencies": {
